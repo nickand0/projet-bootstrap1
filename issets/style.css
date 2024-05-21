@@ -1,0 +1,59 @@
+/*positionnement et style des contenues dans l'image*/
+h2,h1,h4,p{
+  font-family: 'Raleway', sans-serif;
+}
+
+/*positionnement et style des contenues dans l'image*/
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+body{
+  background:linear-gradient(rgb(171, 192, 243),rgb(94, 116, 199));
+}
+/*position des elemens a l'interieur de la carte*/
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+/*surligner les sous titre h4*/
+h4{
+  text-decoration: underline;
+}
+/*position barre de navigation rester pendant le scrolle*/
+header{
+  position: fixed;
+  opacity:80%;
+  margin: auto;
+  width:100vw;
+  z-index: 500;
+}
+/*ombre ajouter a la carte pendant le survole*/
+.card:hover{
+  border-radius: 7px;
+  background: #d6d6d6;
+  box-shadow:  18px 18px 36px #9e9e9e,
+              -18px -18px 36px #ffffff;
+}
+/*changement de style de bouton en savoir plus et voir details pendant le survole*/
+#Destinations .btn:hover,.accordion a:hover,form .btn:hover{
+  border-radius: 0px;
+  background: #0061ff;
+  box-shadow: inset 21px 21px 17px #003791,
+            inset -21px -21px 17px #008bff;
+
+}
+/*ombre pendant le survole dans contact*/
+.form-control:hover{
+  border-radius: 0px;
+  background: #d6d6d6;
+  box-shadow: inset 5px 5px 10px #7a7a7a,
+            inset -5px -5px 10px #ffffff;
+}
+
+
+
